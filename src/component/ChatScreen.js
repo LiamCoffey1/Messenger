@@ -75,7 +75,7 @@ class ChatScreen extends React.Component {
   submitMessage() {
     const {messageText} = this.state;
     const {nickname} = this.props;
-    pushMessage(messageText, nickname);
+    if(messageText.length) pushMessage(messageText, nickname);
     this.setState({
       messageText:"",
       pendingScroll: true

@@ -11,8 +11,16 @@ class LoginScreen extends React.Component {
     };
   }
 
+
   handleChange = (event) => {
     this.setState({nickname: event.target.value});
+  };
+
+  handleKeyEvent = (event) => {
+    if(event.key === 'Enter'){
+      this.props.login(this.state.nickname);
+      event.preventDefault();
+    }
   };
 
   login = () => {
@@ -21,13 +29,18 @@ class LoginScreen extends React.Component {
   };
 
   render() {
+
     return (
       <div className = "login">
       <div className = "loginContainer container">
         <div className = "login-content">
           <h1 className="inset-shadow">Login</h1>
           <p>Please enter a nickname to be identified by</p>
-            <input placeholder="Nickname" value={this.state.nickname} id = "nickname" onChange={event => this.handleChange(event)}/>
+            <input placeholder="Nickname"
+                   value={this.state.nickname}
+                   id = "nickname"
+                   onChange={event => this.handleChange(event)}
+                    onKeyPress={event => this.handleKeyEvent(event)}/>
           <li/>
           <button onClick={this.login}>Enter</button>
         </div>

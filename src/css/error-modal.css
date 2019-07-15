@@ -43,7 +43,7 @@
 }
 
 .btn-multi-1 {
-    border-right: 2px solid grey;
+    border-right: 2px solid grey !important;
     position: absolute;
     left:0;
     width:50%;

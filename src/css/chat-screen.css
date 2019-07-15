@@ -393,11 +393,3 @@ input:-webkit-autofill:active {
     margin-left: 20%;
     transition: margin-left 0.5s;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    select,
-    textarea,
-    input {
-        font-size: 16px;
-    }
-}

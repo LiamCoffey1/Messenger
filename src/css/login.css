@@ -6,7 +6,7 @@
     background-color: #24262e;
     position:absolute; top:20%; right:0; bottom:20%; left:0; margin:auto;
     text-align: center;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .loginContainer input {
@@ -16,22 +16,31 @@
     outline: none;
     text-align: center;
     color:white;
+    width:60%;
+    height:40px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .loginContainer button {
     margin-top: 10px;
-   border-radius: 5px;
+   border-radius: 20px;
     border: 2px solid grey;
-    background-color: #1d1e25;
+    background-color: #14667c;
     outline: none;
-    color:white;
+    color:whitesmoke;
     padding-left: 20px;
     padding-right: 20px;
+    width:60%;
+    height:40px
 
 }
 
 .loginContainer button:hover {
-    color: #14667c;
+    transition: background-color 1s;
+    color: whitesmoke;
+    background-color: #1d1e25;
 }
 
 .loginContainer h1 {
