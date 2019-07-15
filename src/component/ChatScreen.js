@@ -152,8 +152,7 @@ class ChatScreen extends React.Component {
                       default:
                         return (
                           <div className="messageContainer" key={index}>
-                            { index !== 0 && array[index-1].timestamp !== timestamp && <p style = {{textAlign:'center'}}>{timestamp}</p>}
-                            <p className = {isOwnMessage ? "own" : "other"}>{name}</p>
+                            { index !== 0 && array[index-1].name !== name && <p className = {isOwnMessage ? "own" : "other"}>{name}</p>}
                             <div className={"messageBackground" + ((name === nickname) && nickname !== "" ? "-own" : "")}>
                               <p>{message}</p>
                             </div>

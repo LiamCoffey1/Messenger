@@ -312,6 +312,7 @@ input:-webkit-autofill:active {
     clear: both;
     margin-bottom: -3px;
     margin-left: 4px;
+    margin-top: 15px;
 }
 
 .messageContainer .own {
@@ -342,7 +343,7 @@ input:-webkit-autofill:active {
     background-color: #24262e;
     color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     float: left;
     clear: both;
     padding: 5px 10px 5px 10px;
@@ -353,7 +354,7 @@ input:-webkit-autofill:active {
     background-color: #14667c;
     color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     float: right;
     clear: both;
     padding: 5px 10px 5px 10px;
@@ -380,6 +381,7 @@ input:-webkit-autofill:active {
     height: calc(100% - 50px - 40px);
     left: 1px;
     transition: width 0.5s;
+    padding-bottom: 20px;
 }
 
 .mainScreen.toggled {
@@ -390,4 +392,12 @@ input:-webkit-autofill:active {
 .sideBar.toggled {
     margin-left: 20%;
     transition: margin-left 0.5s;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px;
+    }
 }
