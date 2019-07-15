@@ -1,14 +1,9 @@
 import React from 'react'
 
-function renderModal() {
+import '../css/error-modal.css'
 
-}
 
 class ErrorModal extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   handleClick = (value) => {
     console.log(value);
@@ -32,10 +27,10 @@ class ErrorModal extends React.Component {
         console.log(options.length);
           if(options.length === 1) {
             return (
-              <button key = {index} onClick={this.handleClick.bind(this, value)} type="button" className={"btn btn-primary btn-single"}>{value}</button>
+              <button key = {index} onClick={this.handleClick.bind(this, value)} type="button" className={"btn-single"}>{value}</button>
             )
           }  else {
-            return ( <button key = {index} onClick={this.handleClick.bind(this, value)} type="button" className={"btn btn-primary btn-multi-" + (index+1)}>{value}</button>)
+            return ( <button key = {index} onClick={this.handleClick.bind(this, value)} type="button" className={"btn-multi-" + (index+1)}>{value}</button>)
           }
       })}
       </div>

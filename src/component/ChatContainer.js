@@ -1,5 +1,4 @@
 import React from "react";
-import "./chat.css"
 
 import {
   setNickname,
@@ -19,7 +18,7 @@ import ErrorModal from "./ErrorModal";
 class ChatContainer extends React.Component {
 
   componentDidCatch(error, info) {
-    alert(info);
+    alert(error.message);
   }
 
   constructor(props) {

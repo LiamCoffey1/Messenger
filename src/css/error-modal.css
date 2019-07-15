@@ -1,0 +1,58 @@
+.errorBackground {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.errorContainer {
+    border: 2px solid grey;
+    background-color: #24262e;
+    position:absolute; top:40%; right:20%; bottom:40%; left:20%; margin:auto;
+
+}
+
+.errorText {
+    position: relative;
+    float: left;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.errorContainer button {
+    border: none;
+    border-top: 2px solid grey;
+    color:whitesmoke;
+    background-color: #24262e;
+}
+
+.errorContainer button:hover {
+    transition: background-color 0.5s;
+    color:whitesmoke;
+    background-color: #14667c;
+}
+
+.btn-single {
+    position: absolute;
+    left:0;
+    width:100%;
+    bottom:0
+}
+
+.btn-multi-1 {
+    border-right: 2px solid grey;
+    position: absolute;
+    left:0;
+    width:50%;
+    bottom:0;
+}
+
+.btn-multi-2 {
+    position: absolute;
+    right:0;
+    width:50%;
+    bottom:0
+}

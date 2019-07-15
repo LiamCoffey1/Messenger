@@ -1,5 +1,8 @@
 import React from "react";
 
+import "../css/login.css"
+import Textarea from "react-textarea-autosize";
+
 class LoginScreen extends React.Component {
 
   constructor(props) {
@@ -25,7 +28,8 @@ class LoginScreen extends React.Component {
         <div className = "login-content">
           <h1 className="inset-shadow">Login</h1>
           <p>Please enter a nickname to be identified by</p>
-          <input value={this.state.nickname} id = "nickname" onChange={event => this.handleChange(event)}/>
+            <input placeholder="Nickname" value={this.state.nickname} id = "nickname" onChange={event => this.handleChange(event)}/>
+          <li/>
           <button onClick={this.login}>Enter</button>
         </div>
       </div>

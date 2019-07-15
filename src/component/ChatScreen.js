@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../css/chat-screen.css'
+
 
 import Textarea from 'react-textarea-autosize';
 
@@ -135,7 +137,7 @@ class ChatScreen extends React.Component {
               <span data-toggle="tooltip" id = "sidebar" title="Show/hide users" onClick={this.handleChange} className="glyphicon glyphicon glyphicon-user logoutButton"/>
             </div>
 
-              <div className={"messageBox" +  (!sidebarShown ? " toggled" : "")}
+              <div className={"mainScreen" +  (!sidebarShown ? " toggled" : "")}
                    onTouchStart={this.onScroll}
                    onScroll = {this.onScroll}
                    ref = {this.messageBoxRef}>
@@ -146,16 +148,13 @@ class ChatScreen extends React.Component {
                     const {type, name, timestamp, message} = value;
                     switch(type) {
                       case 'notification':
-                        return (<div id="message notification" key={index}>
-                            <p id = "notification">{message}</p>
-                        </div>);
-
+                        return (<p key = {index} id = "notification">{message}</p>);
                       default:
                         return (
-                          <div id="message" key={index}>
+                          <div className="messageContainer" key={index}>
                             { index !== 0 && array[index-1].timestamp !== timestamp && <p style = {{textAlign:'center'}}>{timestamp}</p>}
-                            <p className = {isOwnMessage ? "other" : "own"}>{name}</p>
-                            <div className={"message" + ((name === nickname) && nickname !== "" ? "-own" : "")}>
+                            <p className = {isOwnMessage ? "own" : "other"}>{name}</p>
+                            <div className={"messageBackground" + ((name === nickname) && nickname !== "" ? "-own" : "")}>
                               <p>{message}</p>
                             </div>
                           </div>
