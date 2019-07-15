@@ -2,7 +2,6 @@ import React from "react";
 import "./chat.css"
 
 import {
-  joinRoom,
   setNickname,
   setSocket,
 } from "../utils/api"
@@ -32,10 +31,6 @@ class ChatContainer extends React.Component {
       infoDuration: 0,
 
     };
-  }
-
-  connectToPrivateRoom() {
-    joinRoom();
   }
 
    connect() {
@@ -88,9 +83,6 @@ class ChatContainer extends React.Component {
       });
   };
 
-  disconnect = () => {
-
-  };
 
   render() {
     const {hasLoggedIn, errorMessage} = this.state;

@@ -1,37 +1,25 @@
+const {
+  PORT,
+  WEEKDAYS_SHORTHAND
+} = require( "./Constants");
+
 const io = require('socket.io')();
 
 let names = new Set();
 let messages = new Set();
 
-
-
 io.on('connection', (client) => {
 
-  client.on('subscribe', function(room) {
-    console.log('joining room', room);
-    client.join(room);
+  client.on('subscribeToServer', (interval) => {
+    console.log('client is subscribing to server with interval ', interval);
     setInterval(() => {
-        console.log('sending room post', 1);
-        client.in(1).emit('conversation private post', {
-
-        });
-      }, 1000);
-  });
-
-
-  client.on('subscribeToNamesList', (interval) => {
-    console.log('client is subscribing to names with interval ', interval);
-    setInterval(() => {
-      client.emit('timer', [...names]);
+      let bundle = {
+        users: [...names],
+        messages: [...messages]
+      };
+      client.emit('bundle', bundle);
     }, interval);
   });
-  client.on('subscribeToMessages', (interval) => {
-    console.log('client is subscribing to messages with interval ', interval);
-    setInterval(() => {
-      client.emit('messages', [...messages]);
-    }, interval);
-  });
-
 
   client.on('set', (nickname, cb) => {
     if(names.has(nickname)) {
@@ -58,22 +46,13 @@ io.on('connection', (client) => {
 
 function pushMessage(message, type) {
   let date  = new Date();
-  let weekday = new Array(7);
-  weekday[0] =  "Sun";
-  weekday[1] = "Mon";
-  weekday[2] = "Tue";
-  weekday[3] = "Wed";
-  weekday[4] = "Thur";
-  weekday[5] = "Fri";
-  weekday[6] = "Sat";
   let day = new Date().getDay();
   let paddedMinute = (date.getMinutes() > 9 ? date.getMinutes() : ('0' + date.getMinutes()));
   let paddedHour = (date.getHours() > 9 ? date.getHours() : ('0' + date.getHours()));
-  message.timestamp = weekday[day] + ' ' + paddedHour + ':' + paddedMinute;
+  message.timestamp = WEEKDAYS_SHORTHAND[day] + ' ' + paddedHour + ':' + paddedMinute;
   message.type = type;
   messages.add(message);
 }
 
-const port = 8000;
-io.listen(port);
-console.log('listening on port ', port);
+io.listen(PORT);
+console.log('listening on port ', PORT);

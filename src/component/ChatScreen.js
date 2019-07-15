@@ -6,9 +6,7 @@ import Textarea from 'react-textarea-autosize';
 import {
   pushMessage,
   removeUser,
-  subscribeToMessage,
-  joinRoom,
-  subscribeToNamesList,
+  subscribeToServer,
   unSubscribeListeners
 } from "../utils/api";
 
@@ -34,19 +32,19 @@ class ChatScreen extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.submitMessage = this.submitMessage.bind(this);
 
-    subscribeToNamesList((err, timestamp) => {
+    subscribeToServer((err, bundle) => {
       if(err) throw new Error(err);
-      this.setState({users:timestamp})
-    });
-
-
-    subscribeToMessage((err, messages) => {
-      this.setState({messages});
+      const {users, messages} = bundle;
+      this.setState({
+        users,
+        messages
+      });
       if(this.state.pendingScroll) {
         this.scrollToBottomOfMessageBox();
         this.setState({pendingScroll: false})
       }
     });
+
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -73,11 +71,13 @@ class ChatScreen extends React.Component {
 
 
   submitMessage() {
-    //console.log("call");
     const {messageText} = this.state;
     const {nickname} = this.props;
     pushMessage(messageText, nickname);
-    this.setState({messageText:"", pendingScroll: true});
+    this.setState({
+      messageText:"",
+      pendingScroll: true
+    });
   }
 
   // Setup the `beforeunload` event listener
@@ -89,12 +89,10 @@ class ChatScreen extends React.Component {
   };
 
   componentWillMount() {
-    console.log("init");
     this.setupBeforeUnloadListener();
   }
 
   componentWillUnmount() {
-    console.log("unmount");
     unSubscribeListeners();
     removeUser(this.props.nickname);
   }
@@ -112,14 +110,7 @@ class ChatScreen extends React.Component {
       break;
       default:this.props.remove();
     }
-    console.log("event");
   }
-
-  openPrivateChat = (event) => {
-    console.log(this.props.nickname, event.target.id);
-    joinRoom(1);
-  };
-
 
   handleKeyPress = (event) => {
     if(event.key === 'Enter'){
@@ -184,7 +175,6 @@ class ChatScreen extends React.Component {
                     this.state.users.map((value, index) => {
                       return (
                         <li className="list-group-item1"
-                            onClick={this.openPrivateChat.bind(this)}
                             id = {value}
                             key={index}>
                           <span className="activeDot"/>
