@@ -3,7 +3,6 @@ let socket;
 
 function setSocket(connection) {
   socket = connection;
-  console.log(socket);
 }
 
 function pushMessage(message, name) {
@@ -11,7 +10,6 @@ function pushMessage(message, name) {
 }
 
 function setNickname(name) {
-  console.log(socket);
   return new Promise(function(resolve, reject) {
     return socket.emit('set', name, (response) => {
       if(response === "success") resolve("test");
@@ -21,7 +19,6 @@ function setNickname(name) {
 }
 
 function removeUser(name) {
-  console.log(name);
   socket.emit('remove', name);
 }
 

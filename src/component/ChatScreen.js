@@ -199,7 +199,6 @@ class ChatScreen extends React.Component {
                            this.handleKeyPress(e)
                          }}
                          onChange={event => {
-                           console.log("change");
                            this.handleChange(event)
                          }}
                          id="message"/>

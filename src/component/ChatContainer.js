@@ -51,7 +51,6 @@ class ChatContainer extends React.Component {
   }
 
   setErrorMessage = (params) => {
-    console.log(params);
     this.setState({errorMessage: params})
   };
 
@@ -84,8 +83,7 @@ class ChatContainer extends React.Component {
 
 
   render() {
-    const {hasLoggedIn, errorMessage} = this.state;
-    console.log(this.state);
+    const {hasLoggedIn} = this.state;
     return (
       <div className="chatContainer">
         <ErrorModal {...this.props}

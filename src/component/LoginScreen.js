@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../css/login.css"
-import Textarea from "react-textarea-autosize";
 
 class LoginScreen extends React.Component {
 

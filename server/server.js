@@ -1,7 +1,4 @@
-const {
-  PORT,
-  WEEKDAYS_SHORTHAND
-} = require( "./Constants");
+const CONSTANTS = require( "./Constants");
 
 const io = require('socket.io')();
 
@@ -22,15 +19,19 @@ io.on('connection', (client) => {
   });
 
   client.on('set', (nickname, cb) => {
+    const {
+      NICKNAME_MAX_LENGTH : maxChars,
+      NICKNAME_MIN_LENGTH : minChars
+    } = CONSTANTS;
     if(names.has(nickname)) {
       cb("Name is already taken!");
-    } else if(nickname === "") {
+    } else if(nickname.length < minChars) {
       cb("Nickname is too short.");
-    } else if (nickname.length > 12) {
+    } else if (nickname.length > maxChars) {
       cb("Nickname is too long.");
     } else {
       names.add(nickname);
-      pushMessage({message : (nickname + " has joined the chat"), name: 'none'}, 'notification');
+      pushMessage({message : (nickname + " has joined the chat")}, 'notification');
       cb("success");
     }
   });
@@ -49,10 +50,10 @@ function pushMessage(message, type) {
   let day = new Date().getDay();
   let paddedMinute = (date.getMinutes() > 9 ? date.getMinutes() : ('0' + date.getMinutes()));
   let paddedHour = (date.getHours() > 9 ? date.getHours() : ('0' + date.getHours()));
-  message.timestamp = WEEKDAYS_SHORTHAND[day] + ' ' + paddedHour + ':' + paddedMinute;
+  message.timestamp = CONSTANTS.WEEKDAYS_SHORTHAND[day] + ' ' + paddedHour + ':' + paddedMinute;
   message.type = type;
   messages.add(message);
 }
 
-io.listen(PORT);
-console.log('listening on port ', PORT);
+io.listen(CONSTANTS.PORT);
+console.log('listening on port ', CONSTANTS.PORT);

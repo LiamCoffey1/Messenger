@@ -6,7 +6,6 @@ import '../css/error-modal.css'
 class ErrorModal extends React.Component {
 
   handleClick = (value) => {
-    console.log(value);
     switch(value) {
       case 'retry':
         this.props.closeErrorModal();
@@ -23,7 +22,6 @@ class ErrorModal extends React.Component {
     return(
       <div className="row">
       {options.map((value, index, array) => {
-
         console.log(options.length);
           if(options.length === 1) {
             return (
@@ -42,7 +40,7 @@ class ErrorModal extends React.Component {
     return(
         <div className="errorBackground">
           <div className="errorContainer">
-            <p class = "errorText">{this.props.error.text}</p>
+            <p className = "errorText">{this.props.error.text}</p>
            {this.renderButtons()}
           </div>
         </div>
