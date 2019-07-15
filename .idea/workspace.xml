@@ -1,15 +1,721 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/component/ChatScreen.js" line="14" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9da1539a-e9ac-49c8-8ef8-3f2721811268" name="Default Changelist" comment="V1 changes">
+      <change afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/ChatContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/ChatScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/ErrorModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/InfoModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/LoginScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/flat-ui-icons-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/flat-ui-icons-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/flat-ui-icons-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/flat-ui-icons-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bolditalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bolditalic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bolditalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-bolditalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/lato/lato-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/classie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/jquery-1.9.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/jquery.corner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modernizr-2.6.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/modernizr.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/stickUp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/uiMorphingButton_inflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Messenger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/ErrorModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/LoginScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/chat.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32674">
+              <caret line="1922" column="7" selection-start-line="1922" selection-start-column="7" selection-end-line="1922" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hove</find>
+      <find>newme</find>
+      <find>tool</find>
+      <find>toolsco</find>
+      <find>optio</find>
+      <find>remov</find>
+      <find>new</find>
+      <find>newmess</find>
+      <find>lis</find>
+      <find>side</find>
+      <find>textare</find>
+      <find>bottombar</find>
+      <find>joinroom</find>
+      <find>input</find>
+      <find>submit</find>
+      <find>glyp</find>
+      <find>input-g</find>
+      <find>#message</find>
+      <find>texta</find>
+      <find>autosize</find>
+      <find>focus</find>
+      <find>sideb</find>
+      <find>messagebox</find>
+      <find>chatmessagebox</find>
+      <find>message</find>
+      <find>sideba</find>
+      <find>sidebar</find>
+      <find>list</find>
+      <find>FLAT-UI</find>
+      <find>autos</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>className</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/js/popper.min.js" />
+        <option value="$PROJECT_DIR$/src/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/component/dash/DashNav" />
+        <option value="$PROJECT_DIR$/src/simple-sidebar.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/component/dash/DashContent.jsx" />
+        <option value="$PROJECT_DIR$/src/css/general.css" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/Dashboard.jsx" />
+        <option value="$PROJECT_DIR$/src/css/simple-sidebar.css" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/Profile.js" />
+        <option value="$PROJECT_DIR$/src/component/dash/DashSidebar.jsx" />
+        <option value="$PROJECT_DIR$/UserContext.js" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/UserContext.js" />
+        <option value="$PROJECT_DIR$/src/component/dash/DashNav.jsx" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/chat.css" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/ChatContainer.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/component/dash/pages/LoginScreen.js" />
+        <option value="$PROJECT_DIR$/src/component/chat/LoginScreen.js" />
+        <option value="$PROJECT_DIR$/src/component/chat/ErrorModal.js" />
+        <option value="$PROJECT_DIR$/src/component/chat/InfoModal.js" />
+        <option value="$PROJECT_DIR$/src/component/chat/ChatContainer.js" />
+        <option value="$PROJECT_DIR$/src/utils/api.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/component/chat/ChatScreen.js" />
+        <option value="$PROJECT_DIR$/src/component/chat/chat.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/component/ChatScreen.js" />
+        <option value="$PROJECT_DIR$/src/component/ChatContainer.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/component/chat.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="62" />
-    <option name="y" value="120" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="172" />
+    <option name="y" value="302" />
+    <option name="width" value="1431" />
+    <option name="height" value="961" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Messenger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Messenger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\Liam\WebstormProjects\Messenger\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="C:\Users\Liam\WebstormProjects\Messenger\node_modules\eslint" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard\src\component\chat" />
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard\src" />
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard\src" />
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard\src\component" />
+      <recent name="C:\Users\Liam\WebstormProjects\dashboard\src\component\dash\pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.server.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9da1539a-e9ac-49c8-8ef8-3f2721811268" name="Default Changelist" comment="" />
+      <created>1556280734810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556280734810</updated>
+      <workItem from="1556280735964" duration="21109000" />
+      <workItem from="1556574599964" duration="1167000" />
+      <workItem from="1556802446567" duration="32000" />
+      <workItem from="1557759735938" duration="1394000" />
+      <workItem from="1560277790906" duration="5567000" />
+      <workItem from="1560600126232" duration="11861000" />
+      <workItem from="1560614120983" duration="20242000" />
+      <workItem from="1560682752566" duration="25612000" />
+      <workItem from="1560771640652" duration="29439000" />
+      <workItem from="1561029579278" duration="6110000" />
+      <workItem from="1561117917665" duration="19000" />
+      <workItem from="1561125402104" duration="448000" />
+      <workItem from="1561298089742" duration="24887000" />
+      <workItem from="1561641774560" duration="14674000" />
+      <workItem from="1561904691384" duration="13521000" />
+      <workItem from="1561980597770" duration="4855000" />
+      <workItem from="1562064578713" duration="10729000" />
+      <workItem from="1562111084697" duration="638000" />
+      <workItem from="1562773670065" duration="11000" />
+      <workItem from="1563187198580" duration="1770000" />
+      <workItem from="1563189012511" duration="309000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="195980000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1634" height="1066" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1679198" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.37077296" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2915327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3697749" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="V1 changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1 changes" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/js/wow.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="5" column="113220" selection-start-line="5" selection-start-column="113220" selection-end-line="5" selection-end-column="113220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/sha.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/uglifyjs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/simple-sidebar.css" />
+    <entry file="file://$PROJECT_DIR$/src/css/custom.css" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/UserContext.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/general.css" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/chat.css" />
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/Profile.js" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/DashNav.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/DashSidebar.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/LoginScreen.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/dash/DashContent.jsx" />
+    <entry file="file://$PROJECT_DIR$/node_modules/autosize/LICENSE.md" />
+    <entry file="file://$PROJECT_DIR$/node_modules/autosize/readme.md" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/Dashboard.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/component/dash/pages/ChatContainer.js" />
+    <entry file="file://$PROJECT_DIR$/src/component/InfoModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/ChatScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/ChatContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/font-awesome/css/font-awesome.css" />
+    <entry file="file://$PROJECT_DIR$/src/simple-sidebar.css" />
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/ErrorModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32674">
+          <caret line="1922" column="7" selection-start-line="1922" selection-start-column="7" selection-end-line="1922" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
