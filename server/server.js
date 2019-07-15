@@ -23,7 +23,10 @@ io.on('connection', (client) => {
       NICKNAME_MAX_LENGTH : maxChars,
       NICKNAME_MIN_LENGTH : minChars
     } = CONSTANTS;
-    if(names.has(nickname)) {
+    const nameExists = [...names].some(function(element) {
+      return nickname.toLowerCase() === element.toLowerCase();
+    });
+    if(nameExists) {
       cb("Name is already taken!");
     } else if(nickname.length < minChars) {
       cb("Nickname is too short.");
