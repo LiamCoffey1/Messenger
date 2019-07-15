@@ -10,8 +10,7 @@ class LoginScreen extends React.Component {
       nickname : ""
     };
   }
-
-
+  
   handleChange = (event) => {
     this.setState({nickname: event.target.value});
   };
@@ -34,7 +33,7 @@ class LoginScreen extends React.Component {
       <div className = "login">
       <div className = "loginContainer container">
         <div className = "login-content">
-          <h1 className="inset-shadow">Login</h1>
+          <h1>Login</h1>
           <p>Please enter a nickname to be identified by</p>
             <input placeholder="Nickname"
                    value={this.state.nickname}

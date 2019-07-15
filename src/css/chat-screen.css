@@ -166,7 +166,7 @@ input:-webkit-autofill:active {
 .newMessageBox {
     position: fixed;
     z-index: 10;
-    bottom: calc(10% + 60px);
+    bottom: 55px;
     margin-left: -15px;
     background-color: rgba(20, 102, 124, 0.6);
     width: calc(80% - 0.8vw);
@@ -390,6 +390,11 @@ input:-webkit-autofill:active {
 }
 
 .sideBar.toggled {
-    margin-left: 20%;
-    transition: margin-left 0.5s;
+     margin-left: 20%;
+     transition: margin-left 0.5s;
+ }
+
+.newMessageBox.toggled {
+    width: calc(100% - 0.8vw);
+    transition: width 0.5s;
 }

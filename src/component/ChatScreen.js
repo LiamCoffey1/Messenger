@@ -133,8 +133,8 @@ class ChatScreen extends React.Component {
             <div className="chatTitle">
               <h4>Chat server</h4>
               <span data-toggle="tooltip" title="Settings" className="glyphicon glyphicon-wrench settingsButton"/>
-              <span data-toggle="tooltip" title="Disconnect" onClick={this.handleChange} className="glyphicon glyphicon glyphicon-log-out settingsButton"/>
-              <span data-toggle="tooltip" id = "sidebar" title="Show/hide users" onClick={this.handleChange} className="glyphicon glyphicon glyphicon-user logoutButton"/>
+              <span data-toggle="tooltip" title="Disconnect" onClick={this.handleChange} className="glyphicon glyphicon-log-out settingsButton"/>
+              <span data-toggle="tooltip" id = "sidebar" title="Show/hide users" onClick={this.handleChange} className="glyphicon glyphicon-user logoutButton"/>
             </div>
 
               <div className={"mainScreen" +  (!sidebarShown ? " toggled" : "")}
@@ -145,15 +145,16 @@ class ChatScreen extends React.Component {
                   {this.state.messages.map((value, index, array) => {
                     const {nickname} = this.props;
                     const isOwnMessage = ((value.name === nickname) && nickname !== "");
-                    const {type, name, timestamp, message} = value;
+                    const {type, name, message} = value;
+                    const isSameOwner = (index !== 0 && array[index-1].name !== name);
                     switch(type) {
                       case 'notification':
                         return (<p key = {index} id = "notification">{message}</p>);
                       default:
                         return (
                           <div className="messageContainer" key={index}>
-                            { index !== 0 && array[index-1].name !== name && <p className = {isOwnMessage ? "own" : "other"}>{name}</p>}
-                            <div className={"messageBackground" + ((name === nickname) && nickname !== "" ? "-own" : "")}>
+                            {isSameOwner && <p className = {isOwnMessage ? "own" : "other"}>{name}</p>}
+                            <div className={"messageBackground" + ((name === nickname) ? "-own" : "")}>
                               <p>{message}</p>
                             </div>
                           </div>
@@ -161,7 +162,7 @@ class ChatScreen extends React.Component {
 
                     }
                   })}
-                  {this.state.alertNew && <div onClick={this.handleChange} id = "new-message" class = "newMessageBox">new messages</div>}
+                  {this.state.alertNew && <div onClick={this.handleChange} id = "new-message" className = {"newMessageBox"  +  (!sidebarShown ? " toggled" : "")}>new messages</div>}
                 </div>
               </div>
               <div className={"sideBar" +  (!sidebarShown ? " toggled" : "")}>

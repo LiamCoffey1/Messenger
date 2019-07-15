@@ -21,8 +21,7 @@ class ErrorModal extends React.Component {
     const {options} = error;
     return(
       <div className="row">
-      {options.map((value, index, array) => {
-        console.log(options.length);
+      {options.map((value, index) => {
           if(options.length === 1) {
             return (
               <button key = {index} onClick={this.handleClick.bind(this, value)} type="button" className={"btn-single"}>{value}</button>
